@@ -1,10 +1,17 @@
 @use "sass:map";
 @use 'lib-variables' as *;
 @use "lib-mixins" as *;
+@use 'lib-functions' as functions;
 
 .lib-button {
     padding: 6px 10px;
     background: $primary-color;
     color: $text-color;
     @include rounded();
+    box-shadow: functions.make-shadow(10px, purple);
   }
+
+.accent-button {
+    @extend .lib-button;
+    box-shadow: functions.make-shadow(10px, var(--accent));
+}

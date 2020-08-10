@@ -1,0 +1,10 @@
+@use 'sass:meta';
+
+@function make-shadow($size, $color) {
+    @if meta.type-of($color) == color {
+        @return $size $size 6px rgba($color, .8);
+    } 
+
+    // Use the color directly for css custom variables
+    @return $size $size 6px $color
+}

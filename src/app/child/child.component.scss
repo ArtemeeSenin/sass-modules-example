@@ -15,6 +15,7 @@ p {
 
 .poo {
     @include custom.poop();
+    box-shadow: lib.make-shadow(16px, #3f3f3f);
 }
 
 .alien {

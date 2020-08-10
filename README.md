@@ -6,6 +6,8 @@ The `@use` rule is a replacement for old `@import` and every such import is scop
 
 To add a shorter name for imported module (by default the filename is used) specify desired name after `@use 'my-lib' as lib` or make it global with asterisk like `@use 'my-lib' as *`. The last syntax is handy for libraries with `@forward` as the global styles will be appled only to library scope and not for the end user.
 
+SASS standard library will be available with imports too like `@use 'sass:map'` or `@use 'sass:math'` and can be used like other namespaced imports `color: map.get($params, primary);`
+
 ## Exporting variables, mixins, functions
 
 The `@forward` rule is hadny when creating some libraries to squash all internal files into one for library users. `@forward` can configure variables before export and change visibility of exported members by using `show` and `hide`.
