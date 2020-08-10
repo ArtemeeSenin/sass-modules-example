@@ -1,0 +1,12 @@
+@use "src/styles/lib" with (
+  $primary-color: #0000ff,
+  $text-color: #ffffff
+);
+@use 'src/styles/custom';
+
+h2 {
+  font-family: sans-serif;
+  background: custom.$accent;
+  @include lib.border-style((color: lib.$primary-color, size: 3px));
+  @extend %section-heading;
+}

@@ -1,0 +1,22 @@
+@use "src/styles/lib" with (
+  $primary-color: #0000ff,
+  $text-color: #ffffff
+);
+@use 'src/styles/custom';
+
+p {
+    color: lib.$primary-color;
+
+    &::first-letter {
+        background: custom.$background;
+        text-shadow: 2px 2px 0 custom.$accent;
+    }
+}
+
+.poo {
+    @include custom.poop();
+}
+
+.alien {
+    @extend %invader;
+}

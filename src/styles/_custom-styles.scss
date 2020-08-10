@@ -1,0 +1,6 @@
+@use 'custom-mixins' as mixins;
+
+.unexpected {
+    @include mixins.poop();
+    @extend %invader;
+}

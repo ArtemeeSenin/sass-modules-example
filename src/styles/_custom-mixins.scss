@@ -1,0 +1,11 @@
+@mixin poop() {
+    &::after {
+        content: '💩';
+    }
+}
+
+%invader {
+    &::before {
+        content: '👽';
+    }
+}

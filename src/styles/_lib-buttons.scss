@@ -1,0 +1,10 @@
+@use "sass:map";
+@use 'lib-variables' as *;
+@use "lib-mixins" as *;
+
+.lib-button {
+    padding: 6px 10px;
+    background: $primary-color;
+    color: $text-color;
+    @include rounded();
+  }

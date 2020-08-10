@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sass-module-system"
+    }
+  },
+  "defaultProject": "sass-module-system",
+  "cli": {
+    "analytics": "058ca393-a286-432d-9ec5-a3744b2cd6a6"
+  }
 }
