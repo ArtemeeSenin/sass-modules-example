@@ -1,11 +1,7 @@
-@use "src/styles/lib" with (
-  $primary-color: #0000ff,
-  $text-color: #ffffff
-);
 @use 'src/styles/custom';
 
 p {
-    color: lib.$primary-color;
+    color: custom.$primary-color;
 
     &::first-letter {
         background: custom.$background;
@@ -15,7 +11,7 @@ p {
 
 .poo {
     @include custom.poop();
-    box-shadow: lib.make-shadow(16px, #3f3f3f);
+    box-shadow: custom.make-shadow(16px, #3f3f3f);
 }
 
 .alien {

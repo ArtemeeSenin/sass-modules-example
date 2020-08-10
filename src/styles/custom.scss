@@ -1,3 +1,7 @@
 @forward 'custom-mixins';
 @forward 'custom-styles';
 @forward 'custom-variables';
+@forward "src/styles/lib" with (
+  $primary-color: royalblue,
+  $text-color: #ffffff
+);
